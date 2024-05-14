@@ -1,4 +1,7 @@
-
+enum gender {
+    MAIL = "MAIL",
+    FEMALE = "FEMALE"
+}
 
 export interface TSupplier {
     firstName: string;
@@ -10,13 +13,13 @@ export interface TSupplier {
 }
 
 export interface TSupplierDT {
-    id :number;
+    id: number;
     firstName: string;
     lastName: string;
     gender: string;
     active: boolean;
     businessType: string;
-    descriptions: string;
-    createAt: string;
-    updateAt: string;
+    descriptions: string | null;
+    createAt: DateTime;
+    updatedAt: DateTime;
 }
